@@ -236,3 +236,24 @@ body{
 @media (prefers-reduced-motion: reduce){
   .explore-btn{ transition: none; }
 }
+
+/* Keyboard access, touch-friendly cards, and compact phone layout. */
+.slider{ scroll-snap-type: x mandatory; }
+.card{ scroll-snap-align: start; }
+.nav-links a:focus-visible, .socials a:focus-visible{
+  outline: 2px solid var(--lnk);
+  outline-offset: 4px;
+}
+
+@media (max-width: 560px){
+  body{ padding: 10px; }
+  .page{ min-height: calc(100vh - 20px); padding: 22px 18px 0; }
+  .nav-links{ gap: 14px; }
+  .nav-links a{ font-size: 0.65rem; letter-spacing: 1px; }
+  .slider{ height: 320px; }
+  .footer-tag{ display: none; }
+}
+
+@media (prefers-reduced-motion: reduce){
+  .slider{ scroll-behavior: auto; }
+}

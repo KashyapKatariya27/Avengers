@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel-Must See Places</title>
+    <meta name="description" content="Discover memorable destinations around the world.">
+    <meta name="theme-color" content="#1fcfa8">
+    <title>Travel — Must See Places</title>
     <link rel="stylesheet" href="vercel.css">
 </head>
 <body>
@@ -14,19 +16,19 @@
             <div class="logo">travel.</div>
             <div class="nav-tag">Card slider for wordpress</div>
             <nav class="nav-links">
-                <a href="#">About</a>
-                <a href="#">Contact</a>
+                <a href="#about">About</a>
+                <a href="mailto:hello@example.com">Contact</a>
             </nav>
         </header>
 
-        <main class="hero">
+        <main class="hero" id="about">
             <div class="hero-copy">
-                <h1>Must see<br></h1>
-                <p>Lorem ipsum dolor sit amet, consecture adipiscing elite. Proin elements metus eu enaim rhoncus posure.</p>
-                <button class="explore-btn">Explore</button>
+                <h1>Must see</h1>
+                <p>Discover remarkable places, unforgettable views, and the stories waiting at every destination.</p>
+                <button class="explore-btn" type="button">Explore</button>
             </div>
 
-            <div class="slider">
+            <div class="slider" aria-label="Featured destinations">
                 <div class="card">
                     <img src="https://images.unsplash.com/photo-1641128324972-af3212f0f6bd?w=600&q=80" alt="Cappadocia hot air balloons">
                     <div class="card-info">
@@ -54,16 +56,16 @@
         </main>
 
         <footer class="bottom-bar">
-            <div class="socials">
-                  <a href="#">f</a>
-                  <a href="#">▶</a>
-                  <a href="#">◧</a>
+            <div class="socials" aria-label="Social links">
+                  <a href="https://facebook.com" aria-label="Facebook">f</a>
+                  <a href="https://youtube.com" aria-label="YouTube">▶</a>
+                  <a href="https://instagram.com" aria-label="Instagram">◧</a>
             </div>
             <div class="footer-tag">Unique destinations</div>
             <div class="pager">
-                <span class="pager-count">01 / 03</span>
-                <button class="arrow" id="prevArrow">‹</button>
-                <button class="arrow" id="nextArrow">›</button>
+                <span class="pager-count" aria-live="polite">01 / 03</span>
+                <button class="arrow" id="prevArrow" type="button" aria-label="Previous destination">‹</button>
+                <button class="arrow" id="nextArrow" type="button" aria-label="Next destination">›</button>
             </div>
         </footer>
 
